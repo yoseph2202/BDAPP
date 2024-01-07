@@ -9,9 +9,9 @@
   <div class = "container">
     <div class="jumbotron">
       <h1 class="display-4">Catalogo de Clientes</h1>
-      <p class="lead">Aplicación de muestra del catálogo de clientes</p>
+      <p class="lead">AplicaciÃ³n de muestra del catÃ¡logo de clientes</p>
       <hr class="my-4">
-      <p>PHP aplicación de muestra conectada a una base de datos MySQL para enumerar un catálogo de clientes</p>
+      <p>PHP aplicaciÃ³n de muestra conectada a una base de datos MySQL para enumerar un catÃ¡logo de clientes</p>
     </div>
     <table class="table table-striped table-responsive">
       <thead>
@@ -28,7 +28,7 @@
       <tbody>
         <?php
 
-        $conexion = mysqli_connect(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), "BD");
+        $conexion = mysqli_connect(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), "bd");
 
         $cadenaSQL = "select * from s_customer";
         $resultado = mysqli_query($conexion, $cadenaSQL);
